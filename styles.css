@@ -26,7 +26,7 @@ body {
 }
 
 /* CONTENEDOR PRINCIPAL */
-.container {
+.amg-container {
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
@@ -34,7 +34,7 @@ body {
 }
 
 /* ELEMENTOS PARA ACCESIBILIDAD */
-.visually-hidden {
+.amg-visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -46,7 +46,7 @@ body {
   border: 0;
 }
 
-.skip-link {
+.amg-skip-link {
   position: absolute;
   top: -40px;
   left: 6px;
@@ -58,7 +58,7 @@ body {
   z-index: 100;
 }
 
-.skip-link:focus {
+.amg-skip-link:focus {
   top: 6px;
   outline: 3px solid #8b4513;
   outline-offset: 2px;
@@ -72,7 +72,7 @@ header {
 }
 
 /* NAVEGACION */
-.primary-nav {
+.amg-primary-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -81,23 +81,23 @@ header {
   z-index: 10;
 }
 
-.logo {
+.amg-logo {
   position: absolute;
   top: 1rem;
   left: 1rem;
 }
 
-.logo img {
+.amg-logo img {
   height: 90px;
   width: auto;
   transition: transform 0.3s ease;
 }
 
-.logo img:hover {
+.amg-logo img:hover {
   transform: scale(1.05);
 }
 
-.nav-menu {
+.amg-nav-menu {
   display: flex;
   gap: 2rem;
   list-style: none;
@@ -107,7 +107,7 @@ header {
   padding: 0;
 }
 
-.nav-menu a {
+.amg-nav-menu a {
   color: #ffffff;
   text-decoration: none;
   padding: 0.5rem 1rem;
@@ -116,20 +116,20 @@ header {
   position: relative;
 }
 
-.nav-menu a:hover,
-.nav-menu a:focus {
+.amg-nav-menu a:hover,
+.amg-nav-menu a:focus {
   background-color: rgba(98, 66, 42, 0.2);
   outline: none;
 }
 
 /* SECCION HERO */
-.hero-section {
+.amg-hero-section {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem 0;
 }
 
-.hero-title {
+.amg-hero-title {
   font-size: clamp(3rem, 8vw, 6rem);
   font-weight: 800;
   margin: 0.5rem 0 1.5rem;
@@ -212,13 +212,13 @@ header {
   color: #111827;
 }
 
-.image-overlay-container {
+.image-overlay-.amg-container {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-.image-overlay-container img {
+.image-overlay-.amg-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -349,7 +349,7 @@ details summary:focus {
   background: rgba(0, 0, 0, 0.2);
 }
 
-.forms-section .container {
+.forms-section ..amg-container {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
@@ -501,7 +501,7 @@ footer a:focus {
 
 /* RESPONSIVE MOVILES */
 @media (max-width: 600px) {
-  .hero-title {
+  .amg-hero-title {
     font-size: clamp(2.5rem, 10vw, 4rem);
   }
 
@@ -509,7 +509,7 @@ footer a:focus {
     font-size: clamp(1rem, 4vw, 1.4rem);
   }
 
-  .nav-menu {
+  .amg-nav-menu {
     flex-direction: column;
     gap: 1rem;
     font-size: 1rem;
@@ -525,7 +525,7 @@ footer a:focus {
     max-width: 320px;
   }
 
-  .forms-section .container {
+  .forms-section ..amg-container {
     flex-direction: column;
   }
 
@@ -533,12 +533,12 @@ footer a:focus {
     flex: 1 1 auto;
   }
 
-  .logo {
+  .amg-logo {
     position: static;
     margin-bottom: 1rem;
   }
 
-  .primary-nav {
+  .amg-primary-nav {
     flex-direction: column;
     gap: 1rem;
   }
@@ -550,12 +550,12 @@ footer a:focus {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .nav-menu {
+  .amg-nav-menu {
     gap: 1rem;
     font-size: 1.1rem;
   }
 
-  .hero-title {
+  .amg-hero-title {
     font-size: clamp(3.5rem, 7vw, 5rem);
   }
 
@@ -570,13 +570,13 @@ footer a:focus {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .nav-menu {
+  .amg-nav-menu {
     gap: 2rem;
   }
 }
 
 @media (min-width: 1400px) {
-  .container {
+  ..amg-container {
     padding: 0 2rem;
   }
 }
