@@ -1,1 +1,370 @@
-<!doctype html></html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Proyecto que visibiliza a mujeres científicas que lucharon por los derechos sexuales y reproductivos">
+  <meta name="keywords" content="mujeres científicas, derechos reproductivos, feminismo, historia">
+  <meta name="author" content="Ana Muruzabal">
+
+  <title>Piedras Angulares - Mujeres Científicas</title>
+
+  <link rel="icon" type="image/png" href="assets/img/icons/diamond.png">
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Navegación principal -->
+  <header role="banner">
+    <div class="container">
+      <nav class="primary-nav" role="navigation" aria-label="Navegación principal">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="https://factoriaf5.org/"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Ir al sitio web de Factoría F5 FemCoders (se abre en nueva ventana)">
+            <img src="assets/img/logos/logo-femcoders.png"
+                 alt="Logo de Factoría F5 FemCoders"
+                 width="90"
+                 height="auto">
+          </a>
+        </div>
+
+        <!-- Menú de navegación -->
+        <ul class="nav-menu" role="menubar">
+          <li role="menuitem">
+            <a href="#hero" aria-label="Ir al inicio de la página">Inicio</a>
+          </li>
+          <li role="menuitem">
+            <a href="https://github.com/CeliaMi/piedras-angulares/issues"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Ver el proyecto en GitHub (se abre en nueva ventana)">Proyecto</a>
+          </li>
+          <li role="menuitem">
+            <a href="mailto:anamuruzabal@gmail.com"
+               aria-label="Enviar correo electrónico para contactar">Contacta</a>
+          </li>
+          <li role="menuitem">
+            <a href="#subscription-form" aria-label="Ir al formulario de suscripción">Suscríbete</a>
+          </li>
+          <li role="menuitem">
+            <a href="#registration-form" aria-label="Ir al formulario de registro">Regístrate</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Sección hero -->
+      <section id="hero" class="hero-section">
+        <h1 class="hero-title">Piedras Angulares</h1>
+        <div class="hero-subtitle">
+          <p>Esta web rescata a mujeres que desde la ciencia intentaron oponerse a la represión de los derechos sexuales y reproductivos de las mujeres.</p>
+          <p>Enfrentaron censura, olvido y violencia por defender nuestros cuerpos, la sexualidad libre y el acceso justo a la salud.</p>
+          <p><em>Sus historias siguen siendo necesarias hoy.</em></p>
+        </div>
+      </section>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main id="main-content" role="main">
+    <div class="container">
+      <section class="scientists-section" aria-labelledby="scientists-heading">
+        <h2 id="scientists-heading" class="visually-hidden">Mujeres científicas destacadas</h2>
+
+        <div class="cards-grid" role="grid" aria-label="Tarjetas de científicas">
+
+          <!-- Tarjeta 1: Clelia Duel Mosher -->
+          <article class="flip-card" role="gridcell" tabindex="0"
+                   aria-labelledby="clelia-name"
+                   aria-describedby="clelia-description">
+            <div class="flip-card-inner">
+              <!-- Frente -->
+              <div class="card-face front">
+                <div class="image-overlay-container">
+                  <img src="assets/img/portraits/1cleliaduel.jpg"
+                       alt="Retrato en blanco y negro de Clelia Duel Mosher"
+                       loading="lazy">
+                  <div class="overlay-name" id="clelia-name">
+                    Clelia Duel Mosher<br>
+                    <span class="dates">1863-1940</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Reverso -->
+              <div class="card-face back">
+                <img src="assets/img/contribution/1cleliaduel-contribucion.jpg"
+                     alt="Portada del estudio sexual de Mosher"
+                     loading="lazy">
+                <h3>'The Mosher Sex Study'</h3>
+                <p id="clelia-description">Médica y fisióloga estadounidense</p>
+                <details>
+                  <summary>Leer más sobre Clelia Duel Mosher</summary>
+                  <div class="details-content">
+                    <p>Durante casi tres décadas recopiló testimonios íntimos de mujeres que contradecían los estereotipos de su época. Su investigación permaneció oculta durante más de 50 años y fue redescubierta en los años 70.</p>
+                    <a href="https://en.wikipedia.org/wiki/Clelia_Duel_Mosher"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Leer más sobre Clelia Duel Mosher en Wikipedia (se abre en nueva ventana)">
+                      Ver en Wikipedia
+                    </a>
+                  </div>
+                </details>
+              </div>
+            </div>
+          </article>
+
+          <!-- Tarjeta 2: Elena Arizmendi -->
+          <article class="flip-card" role="gridcell" tabindex="0"
+                   aria-labelledby="elena-name"
+                   aria-describedby="elena-description">
+            <div class="flip-card-inner">
+              <!-- Frente -->
+              <div class="card-face front">
+                <div class="image-overlay-container">
+                  <img src="assets/img/portraits/2elenaarizmendi.jpg"
+                       alt="Retrato de Elena Arizmendi"
+                       loading="lazy">
+                  <div class="overlay-name" id="elena-name">
+                    Elena Arizmendi<br>
+                    <span class="dates">1884-1949</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Reverso -->
+              <div class="card-face back">
+                <img src="assets/img/contribution/2elenaarizmendi-contribucion.jpg"
+                     alt="Símbolo de la Cruz Blanca Neutral"
+                     loading="lazy">
+                <h3>Cruz Blanca Neutral</h3>
+                <p id="elena-description">Enfermera y feminista mexicana</p>
+                <details>
+                  <summary>Leer más sobre Elena Arizmendi</summary>
+                  <div class="details-content">
+                    <p>Fundó la Cruz Blanca Neutral, publicó la revista "Feminismo Internacional", y denunció la exclusión de las mujeres latinoamericanas del feminismo hegemónico.</p>
+                    <a href="https://es.wikipedia.org/wiki/Elena_Arizmendi_Mej%C3%ADa"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Leer más sobre Elena Arizmendi en Wikipedia (se abre en nueva ventana)">
+                      Ver en Wikipedia
+                    </a>
+                  </div>
+                </details>
+              </div>
+            </div>
+          </article>
+
+          <!-- Tarjeta 3: Helen Rodríguez-Trías -->
+          <article class="flip-card" role="gridcell" tabindex="0"
+                   aria-labelledby="helen-name"
+                   aria-describedby="helen-description">
+            <div class="flip-card-inner">
+              <!-- Frente -->
+              <div class="card-face front">
+                <div class="image-overlay-container">
+                  <img src="assets/img/portraits/3helenrodriguez.jpg"
+                       alt="Retrato de Helen Rodríguez-Trías"
+                       loading="lazy">
+                  <div class="overlay-name" id="helen-name">
+                    Helen Rodríguez-Trías<br>
+                    <span class="dates">1929-2001</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Reverso -->
+              <div class="card-face back">
+                <img src="assets/img/contribution/3helenrodriguez-contribucion.jpg"
+                     alt="Helen Rodríguez-Trías trabajando en el hospital"
+                     loading="lazy">
+                <h3>Servicio pediátrico en el Bronx</h3>
+                <p id="helen-description">Pediatra y activista puertorriqueña-estadounidense</p>
+                <details>
+                  <summary>Leer más sobre Helen Rodríguez-Trías</summary>
+                  <div class="details-content">
+                    <ul>
+                      <li>Fundadora del primer servicio pediátrico en el Bronx</li>
+                      <li>Líder en salud reproductiva y consentimiento informado</li>
+                      <li>Primera presidenta latina de la APHA</li>
+                    </ul>
+                    <a href="https://en.wikipedia.org/wiki/Helen_Rodr%C3%ADguez_Tr%C3%ADas"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Leer más sobre Helen Rodríguez-Trías en Wikipedia (se abre en nueva ventana)">
+                      Ver en Wikipedia
+                    </a>
+                  </div>
+                </details>
+              </div>
+            </div>
+          </article>
+
+          <!-- Tarjeta 4: Nawal El Saadawi -->
+          <article class="flip-card" role="gridcell" tabindex="0"
+                   aria-labelledby="nawal-name"
+                   aria-describedby="nawal-description">
+            <div class="flip-card-inner">
+              <!-- Frente -->
+              <div class="card-face front">
+                <div class="image-overlay-container">
+                  <img src="assets/img/portraits/4nawalelsaadi.jpg"
+                       alt="Retrato de Nawal El Saadawi"
+                       loading="lazy">
+                  <div class="overlay-name" id="nawal-name">
+                    Nawal El Saadawi<br>
+                    <span class="dates">1931-2021</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Reverso -->
+              <div class="card-face back">
+                <img src="assets/img/contribution/4nawalelsaadi-contribucion.jpg"
+                     alt="Portada del libro Mujer en punto cero de Nawal El Saadawi"
+                     loading="lazy">
+                <h3>Mujer en punto cero</h3>
+                <p id="nawal-description">Médica, psiquiatra y escritora egipcia</p>
+                <details>
+                  <summary>Leer más sobre Nawal El Saadawi</summary>
+                  <div class="details-content">
+                    <p>Denunció la mutilación genital femenina y los abusos hacia las mujeres. Fue encarcelada y exiliada por sus ideas feministas. Defendió el cuerpo femenino como sujeto de derecho.</p>
+                    <a href="https://es.wikipedia.org/wiki/Nawal_El_Saadawi"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Leer más sobre Nawal El Saadawi en Wikipedia (se abre en nueva ventana)">
+                      Ver en Wikipedia
+                    </a>
+                  </div>
+                </details>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Sección de formularios -->
+  <section class="forms-section" aria-labelledby="forms-heading">
+    <div class="container">
+      <h2 id="forms-heading" class="visually-hidden">Formularios de suscripción y registro</h2>
+
+      <!-- Formulario de suscripción -->
+      <form id="subscription-form"
+            class="form-card"
+            aria-labelledby="subscription-title"
+            novalidate>
+        <h3 id="subscription-title">Suscríbete para conocer noticias y novedades del proyecto Piedras Angulares</h3>
+
+        <div class="form-group">
+          <label for="subscription-email">Correo electrónico <span aria-hidden="true">*</span></label>
+          <input type="email"
+                 id="subscription-email"
+                 name="email"
+                 placeholder="ejemplo@correo.com"
+                 required
+                 aria-describedby="subscription-email-error"
+                 autocomplete="email">
+          <div id="subscription-email-error" class="error-message" role="alert" aria-live="polite"></div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">
+          <span>Suscríbete</span>
+        </button>
+      </form>
+
+      <!-- Formulario de registro -->
+      <form id="registration-form"
+            class="form-card"
+            aria-labelledby="registration-title"
+            novalidate>
+        <h3 id="registration-title">Regístrate para acceder al contenido exclusivo del proyecto</h3>
+
+        <div class="form-group">
+          <label for="registration-name">Nombre <span aria-hidden="true">*</span></label>
+          <input type="text"
+                 id="registration-name"
+                 name="name"
+                 placeholder="Tu nombre"
+                 required
+                 aria-describedby="registration-name-error"
+                 autocomplete="given-name">
+          <div id="registration-name-error" class="error-message" role="alert" aria-live="polite"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="registration-surname">Apellidos <span aria-hidden="true">*</span></label>
+          <input type="text"
+                 id="registration-surname"
+                 name="surname"
+                 placeholder="Tus apellidos"
+                 required
+                 aria-describedby="registration-surname-error"
+                 autocomplete="family-name">
+          <div id="registration-surname-error" class="error-message" role="alert" aria-live="polite"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="registration-email">Correo electrónico <span aria-hidden="true">*</span></label>
+          <input type="email"
+                 id="registration-email"
+                 name="email"
+                 placeholder="ejemplo@correo.com"
+                 required
+                 aria-describedby="registration-email-error"
+                 autocomplete="email">
+          <div id="registration-email-error" class="error-message" role="alert" aria-live="polite"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="registration-password">Contraseña <span aria-hidden="true">*</span></label>
+          <input type="password"
+                 id="registration-password"
+                 name="password"
+                 placeholder="Tu contraseña"
+                 required
+                 aria-describedby="registration-password-error registration-password-help"
+                 autocomplete="new-password">
+          <div id="registration-password-help" class="form-help">
+            Mínimo 8 caracteres, incluyendo mayúsculas, minúsculas y números
+          </div>
+          <div id="registration-password-error" class="error-message" role="alert" aria-live="polite"></div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">
+          <span>Regístrate</span>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer role="contentinfo">
+    <div class="container">
+      <p>
+        Proyecto desarrollo web del bootcamp full stack de Factoría F5 FemCoders.
+        Creado por
+        <a href="https://www.linkedin.com/in/ana-muruzabal-1ab453209/"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Perfil de LinkedIn de Ana Muruzabal (se abre en nueva ventana)">
+          Ana Muruzabal
+        </a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Skip to main content link (hidden visually but available to screen readers) -->
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+</body>
+</html>
