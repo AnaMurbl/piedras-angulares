@@ -118,7 +118,7 @@ header {
 
 .amg-nav-menu a:hover,
 .amg-nav-menu a:focus {
-  background-color: rgba(98, 66, 42, 0.2);
+  background-color: rgba(139, 69, 19, 0.2);
   outline: none;
 }
 
@@ -137,7 +137,7 @@ header {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.hero-subtitle {
+.amg-hero-subtitle {
   font-size: clamp(1.2rem, 3vw, 1.8rem);
   font-weight: 200;
   color: #e5e7eb;
@@ -146,21 +146,21 @@ header {
   line-height: 1.7;
 }
 
-.hero-subtitle p {
+.amg-hero-subtitle p {
   margin: 0 0 1rem 0;
 }
 
-.hero-subtitle em {
+.amg-hero-subtitle em {
   font-style: italic;
   color: #ffffff;
 }
 
 /* SECCION CIENTIFICAS */
-.scientists-section {
+.amg-scientists-section {
   padding: 4rem 0;
 }
 
-.cards-grid {
+.amg-cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
@@ -170,14 +170,14 @@ header {
 }
 
 /* TARJETAS FLIP */
-.flip-card {
+.amg-flip-card {
   width: 320px;
   height: 560px;
   perspective: 1200px;
   cursor: pointer;
 }
 
-.flip-card-inner {
+.amg-flip-card-inner {
   position: relative;
   width: 100%;
   height: 100%;
@@ -186,17 +186,17 @@ header {
   transform-style: preserve-3d;
 }
 
-.flip-card:hover .flip-card-inner,
-.flip-card:focus .flip-card-inner {
+.amg-flip-card:hover .amg-flip-card-inner,
+.amg-flip-card:focus .amg-flip-card-inner {
   transform: rotateY(180deg);
 }
 
-.flip-card:focus {
+.amg-flip-card:focus {
   outline: 3px solid #8b4513;
   outline-offset: 2px;
 }
 
-.card-face {
+.amg-card-face {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -207,25 +207,25 @@ header {
 }
 
 /* FRENTE TARJETA */
-.front {
+.amg-front {
   background-color: #ffffff;
   color: #111827;
 }
 
-.image-overlay-.amg-container {
+.amg-image-overlay-container {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-.image-overlay-.amg-container img {
+.amg-image-overlay-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
 }
 
-.overlay-name {
+.amg-overlay-name {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -240,14 +240,14 @@ header {
   border-bottom-right-radius: 1rem;
 }
 
-.dates {
+.amg-dates {
   font-size: 1.1rem;
   font-weight: 300;
   opacity: 0.9;
 }
 
 /* REVERSO TARJETA */
-.back {
+.amg-back {
   background-color: #111827;
   color: #ffffff;
   transform: rotateY(180deg);
@@ -258,7 +258,7 @@ header {
   overflow-y: auto;
 }
 
-.back img {
+.amg-back img {
   width: 100%;
   height: auto;
   max-height: 200px;
@@ -267,14 +267,14 @@ header {
   margin-bottom: 1rem;
 }
 
-.back h3 {
+.amg-back h3 {
   font-size: 1.4rem;
   font-weight: 600;
   margin: 0 0 0.5rem 0;
   text-align: center;
 }
 
-.back p {
+.amg-back p {
   font-size: 1.1rem;
   color: #e5e7eb;
   margin: 0 0 1rem 0;
@@ -315,41 +315,41 @@ details summary:focus {
   outline: none;
 }
 
-.details-content {
+.amg-details-content {
   padding: 1rem 0;
   font-size: 1rem;
   line-height: 1.6;
 }
 
-.details-content ul {
+.amg-details-content ul {
   list-style-type: disc;
   padding-left: 1.5rem;
   margin: 1rem 0;
 }
 
-.details-content li {
+.amg-details-content li {
   margin-bottom: 0.5rem;
 }
 
-.details-content a {
+.amg-details-content a {
   color: #e5e7eb;
   text-decoration: underline;
   transition: color 0.3s ease;
 }
 
-.details-content a:hover,
-.details-content a:focus {
+.amg-details-content a:hover,
+.amg-details-content a:focus {
   color: #ffffff;
   outline: none;
 }
 
 /* FORMULARIOS */
-.forms-section {
+.amg-forms-section {
   padding: 4rem 0;
   background: rgba(0, 0, 0, 0.2);
 }
 
-.forms-section ..amg-container {
+.amg-forms-section .amg-container {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
@@ -357,7 +357,7 @@ details summary:focus {
   max-width: 1200px;
 }
 
-.form-card {
+.amg-form-card {
   background: rgba(255, 255, 255, 0.05);
   padding: 2rem;
   border-radius: 1rem;
@@ -367,7 +367,7 @@ details summary:focus {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.form-card h3 {
+.amg-form-card h3 {
   font-size: 1.3rem;
   font-weight: 600;
   color: #ffffff;
@@ -376,7 +376,7 @@ details summary:focus {
   line-height: 1.4;
 }
 
-.form-group {
+.amg-form-group {
   margin-bottom: 1.5rem;
 }
 
@@ -418,14 +418,14 @@ input:valid:not(:placeholder-shown) {
   border-color: #10b981;
 }
 
-.form-help {
+.amg-form-help {
   font-size: 0.9rem;
   color: #d1d5db;
   margin-top: 0.5rem;
   line-height: 1.4;
 }
 
-.error-message {
+.amg-error-message {
   font-size: 0.9rem;
   color: #ef4444;
   margin-top: 0.5rem;
@@ -434,7 +434,7 @@ input:valid:not(:placeholder-shown) {
 }
 
 /* BOTONES */
-.btn {
+.amg-btn {
   width: 100%;
   padding: 1rem 1.5rem;
   font-size: 1.1rem;
@@ -448,25 +448,25 @@ input:valid:not(:placeholder-shown) {
   overflow: hidden;
 }
 
-.btn-primary {
+.amg-btn-primary {
   background: linear-gradient(135deg, #722f37, #8b4513);
   color: #ffffff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-.btn-primary:hover,
-.btn-primary:focus {
+.amg-btn-primary:hover,
+.amg-btn-primary:focus {
   transform: translateY(-2px);
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
   background: linear-gradient(135deg, #8b4513, #a0522d);
   outline: none;
 }
 
-.btn-primary:active {
+.amg-btn-primary:active {
   transform: translateY(0);
 }
 
-.btn:disabled {
+.amg-btn:disabled {
   opacity: 0.6;
   cursor: not-allowed;
   transform: none;
@@ -505,7 +505,7 @@ footer a:focus {
     font-size: clamp(2.5rem, 10vw, 4rem);
   }
 
-  .hero-subtitle {
+  .amg-hero-subtitle {
     font-size: clamp(1rem, 4vw, 1.4rem);
   }
 
@@ -515,21 +515,21 @@ footer a:focus {
     font-size: 1rem;
   }
 
-  .cards-grid {
+  .amg-cards-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
 
-  .flip-card {
+  .amg-flip-card {
     width: 100%;
     max-width: 320px;
   }
 
-  .forms-section ..amg-container {
+  .amg-forms-section .amg-container {
     flex-direction: column;
   }
 
-  .form-card {
+  .amg-form-card {
     flex: 1 1 auto;
   }
 
@@ -546,7 +546,7 @@ footer a:focus {
 
 /* RESPONSIVE TABLETAS */
 @media (min-width: 601px) and (max-width: 1024px) {
-  .cards-grid {
+  .amg-cards-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -559,14 +559,14 @@ footer a:focus {
     font-size: clamp(3.5rem, 7vw, 5rem);
   }
 
-  .hero-subtitle {
+  .amg-hero-subtitle {
     font-size: clamp(1.3rem, 3vw, 1.6rem);
   }
 }
 
 /* RESPONSIVE ESCRITORIO */
 @media (min-width: 1025px) {
-  .cards-grid {
+  .amg-cards-grid {
     grid-template-columns: repeat(4, 1fr);
   }
 
@@ -576,7 +576,7 @@ footer a:focus {
 }
 
 @media (min-width: 1400px) {
-  ..amg-container {
+  .amg-container {
     padding: 0 2rem;
   }
 }
@@ -589,12 +589,12 @@ footer a:focus {
     transition-duration: 0.01ms !important;
   }
 
-  .flip-card-inner {
+  .amg-flip-card-inner {
     transition: none;
   }
 
-  .flip-card:hover .flip-card-inner,
-  .flip-card:focus .flip-card-inner {
+  .amg-flip-card:hover .amg-flip-card-inner,
+  .amg-flip-card:focus .amg-flip-card-inner {
     transform: none;
   }
 }
